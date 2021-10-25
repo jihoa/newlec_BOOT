@@ -24,7 +24,7 @@ class MybatisNoticeDaoTest {
 		//		order by regdate desc
 		//		limit #{offset}, #{size}
 		//(int offset, int size, String field, String query)
-		List<NoticeView> list = noticeDao.getViewList(0, 1, "title", null);
+		List<NoticeView> list = noticeDao.getViewList(0, 1, "title", null, false);
 		System.out.println(list.get(0));
 	}
 

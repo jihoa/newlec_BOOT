@@ -20,7 +20,7 @@ class NoticeDaoTest {
 	@Test
 	void test() {
 		
-		List<NoticeView> list = noticeDao.getViewList(0, 1, "title", null);
+		List<NoticeView> list = noticeDao.getViewList(0, 1, "title", null, false);
 		
 		System.out.println(list.get(0));
 	}
