@@ -27,6 +27,8 @@ public class NoticeController {
 		//model.addAttribute("test","Hello~");
 		List<NoticeView> list = service.getViewList(page, field, query, true);
 		
+				
+
 		model.addAttribute("list",list);
 		
 		return "customer/notice/list";
