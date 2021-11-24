@@ -33,8 +33,8 @@ public class AroundHubExceptionHandler {
 
         return new ResponseEntity<>(map, responseHeaders, httpStatus);
     }
-    
-    
+
+
     @ExceptionHandler(value = AroundHubException.class)
     public ResponseEntity<Map<String, String>> ExceptionHandler(AroundHubException e) {
         HttpHeaders responseHeaders = new HttpHeaders();
