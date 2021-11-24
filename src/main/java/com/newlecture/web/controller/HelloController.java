@@ -1,15 +1,13 @@
 package com.newlecture.web.controller;
 
+import com.newlecture.web.common.Constants.ExceptionClass;
+import com.newlecture.web.common.exception.AroundHubException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
-
-import com.newlecture.web.common.Constants.ExceptionClass;
-import com.newlecture.web.common.exception.AroundHubException;
 
 
 @RestController
@@ -26,6 +24,12 @@ public class HelloController {
     public void customExceptionTest() throws AroundHubException {
     	throw new AroundHubException(ExceptionClass.PRODUCT, HttpStatus.FORBIDDEN, "접근이 금지되었습니다.");
     }
+
+
+	@GetMapping(value = "/product/exceptionget")
+	public void customExceptionTestGet() throws AroundHubException {
+		throw new AroundHubException(ExceptionClass.PRODUCT, HttpStatus.FORBIDDEN, "접근이 금지되었습니다.");
+	}
     
     
 
