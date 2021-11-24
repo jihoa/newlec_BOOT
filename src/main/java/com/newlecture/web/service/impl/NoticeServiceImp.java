@@ -1,5 +1,6 @@
-package com.newlecture.web.service;
+package com.newlecture.web.service.impl;
 
+import com.newlecture.web.service.NoticeService;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,7 +11,7 @@ import com.newlecture.web.entity.Notice;
 import com.newlecture.web.entity.NoticeView;
 
 @Service
-public class NoticeServiceImp implements NoticeService{
+public class NoticeServiceImp implements NoticeService {
 
 	@Autowired
 	private NoticeDao noticeDao;

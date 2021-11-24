@@ -1,5 +1,7 @@
-package com.newlecture.web.controller;
+package com.newlecture.web.service.impl;
 
+import com.newlecture.web.service.RestTemplateService;
+import com.newlecture.web.dto.MemberDTO;
 import java.net.URI;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

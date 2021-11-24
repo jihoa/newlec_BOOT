@@ -1,5 +1,6 @@
-package com.newlecture.web.controller;
+package com.newlecture.web.service;
 
+import com.newlecture.web.dto.MemberDTO;
 import org.springframework.http.ResponseEntity;
 
 public interface RestTemplateService {

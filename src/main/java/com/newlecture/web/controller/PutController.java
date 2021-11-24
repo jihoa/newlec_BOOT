@@ -1,12 +1,11 @@
 package com.newlecture.web.controller;
 
+import com.newlecture.web.dto.MemberDTO;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
-
-import com.newlecture.web.dto.MemberDTO;
 
 @RestController
 public class PutController {

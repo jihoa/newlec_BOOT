@@ -1,5 +1,7 @@
 package com.newlecture.web.controller;
 
+import com.newlecture.web.dto.MemberDTO;
+import com.newlecture.web.service.RestTemplateService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;

@@ -6,6 +6,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
+import com.newlecture.web.service.impl.RestTemplateServiceimpl;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,7 +24,7 @@ class RestTemplateControllerTest {
 
 	  // ProductController에서 잡고 있는 Bean 객체에 대해 Mock 형태의 객체를 생성해줌
 	  @MockBean
-	  RestTemplateServiceimpl restTemplateService;
+      RestTemplateServiceimpl restTemplateService;
 
 	  // http://localhost:8080/api/v1/product-api/product/{productId}
 	  @Test
